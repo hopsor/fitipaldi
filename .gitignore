@@ -4,3 +4,5 @@
 /priv/static
 
 .DS_Store
+web/elm/elm-stuff
+dev.secret.exs
