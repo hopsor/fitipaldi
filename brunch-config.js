@@ -54,7 +54,12 @@ exports.config = {
     babel: {
       // Do not use ES6 compiler in vendor code
       ignore: [/web\/static\/vendor/]
-    }
+    },
+    stylus: {
+      plugins: {
+        stylus: ['nib'],
+      },
+    },
   },
 
   modules: {
@@ -64,6 +69,9 @@ exports.config = {
   },
 
   npm: {
-    enabled: true
+    enabled: true,
+    styles: {
+      "normalize.css": ["normalize.css"]
+    }
   }
 };
